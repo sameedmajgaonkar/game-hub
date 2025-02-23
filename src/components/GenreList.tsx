@@ -9,7 +9,7 @@ import {
 import useGenres from "../hooks/useGenres";
 import getCroppedImageUrl from "../services/image-url";
 import GenreListSkeleton from "./GenreListSkeleton";
-import useGameQueryStore from "./store";
+import useGameQueryStore from "../store";
 
 const GenreList = () => {
   const { data, error, isLoading } = useGenres();
