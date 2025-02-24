@@ -6,6 +6,7 @@ import PlatformSelector from "../components/PlatformSelector";
 import SortSelector from "../components/SortSelector";
 
 const HomePage = () => {
+  console.log(import.meta.env.VITE_KEY);
   return (
     <Grid
       templateAreas={{
