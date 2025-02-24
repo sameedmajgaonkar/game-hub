@@ -5,13 +5,13 @@ import GameAttributes from "../components/GameAttributes";
 import GameTrailer from "../components/GameTrailer";
 import useGame from "../hooks/useGame";
 import GameScreenshots from "../components/GameScreenshots";
+import GameDetailSkeleton from "../components/GameDetailSkeleton";
 
 const GameDetailsPage = () => {
   const { slug } = useParams();
   const { data: game, isLoading, error } = useGame(slug!);
 
-  if (isLoading) return <Spinner />;
-
+  if (isLoading) return <GameDetailSkeleton />;
   if (error || !game) throw error;
 
   return (
