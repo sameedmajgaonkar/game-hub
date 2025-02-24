@@ -11,7 +11,7 @@ const DefinitionItem = ({ term, children }: Props) => {
       <Heading as="dt" fontSize="md" color="gray.600">
         {term}
       </Heading>
-      <dd>{children}</dd>
+      <dd style={{ paddingBlock: "1rem" }}>{children}</dd>
     </Box>
   );
 };
